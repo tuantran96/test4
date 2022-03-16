@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Admin thêm mới sản phẩm</title>
+	<link rel="stylesheet" type="text/css" href="/css/admin-style.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/add-style.css">
+</head>
+<body>
+	<div class="header">
+		<div class="left">
+			<a href="#">
+				<h3>Admin</h3>
+			</a>
+		</div>
+		<div class="right">
+			<a href="#" class="">
+				<i class="fas fa-envelope"></i>
+				<i class="far fa-bell"></i>
+				<i class="fas fa-phone"></i>
+			</a>
+
+		</div>
+	</div>
+	<div class="main">
+		<div class="sidebar">
+			<div class="menu">
+				<h3>Anh Tuấn</h3>
+				
+				<ul>
+					<li><a href="#">Đơn hàng</a></li>
+					<li><a href="http://127.0.0.1:5500/layouts/product.html">Sản phẩm</a></li>
+					<li><a href="http://127.0.0.1:5500/layouts/account.html">Tài khoản</a></li>
+					<li><a href="#">Cài đặt</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="content">
+            <div class="search">
+                <input type="" placeholder="Search" >
+                <button>
+                    Search
+                </button>
+            </div>
+            <div class="form_register">
+                <h2 id="title-form" style="font-size: 32px;">Thêm mới sản phẩm</h2>
+                <form>
+                    <div class="form-group">
+                        <label>Tên</label>
+                        <input type="text"   class="form-control" name="name" id="name">
+                        
+                    </div>
+                    <div class="form-group">
+                        <label>Thể loại</label>
+                        <input type="text"  class="form-control" name="category" id="category">
+                        
+                    </div>
+                    <div class="form-group">
+                        <label>Giá</label>
+                        <input type="text"  class="form-control" name="price" id="price">
+                        
+                    </div>
+                    <div class="form-group">
+                        <label>Mô tả</label>
+                        <input type="text" class="form-control" name="desc" id="desc" >
+                        <p id="error_password"></p>
+                    </div>
+                    
+                    <div class="form-group form-btn">
+                        <button type="submit" onclick="submitForm()" class="btn btn-register">Add</button>
+                    </div>
+                </form>
+            </div>
+
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="/js/script.js"></script>
+</html>
